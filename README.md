@@ -4,12 +4,11 @@ This repo describes how to get the [n64
 sdk](http://ultra64.ca/files/software/other/sdks/n64sdk.7z) compiling on a modern OS (Linux,
 Windows, macOS).
 
-## Steps
-### Download the [sdk](http://ultra64.ca/files/software/other/sdks/n64sdk.7z).
+## Download the [sdk](http://ultra64.ca/files/software/other/sdks/n64sdk.7z).
 
-Download the [sdk](http://ultra64.ca/files/software/other/sdks/n64sdk.7z), and extract to a folder. We'll call this folder `N64_SDK`.
+Download the [sdk](http://ultra64.ca/files/software/other/sdks/n64sdk.7z) and extract to a folder. We'll call this folder `N64_SDK`.
 
-### Compile the GCC toolchain
+## Compile the GCC toolchain
 
 Clone the n64chain repo found here: https://github.com/tj90241/n64chain.
 
@@ -25,7 +24,7 @@ After running this command, make sure that `N64_TOOLCHAIN` is on your path:
 export PATH="$N64_TOOLCHAIN/bin:$PATH"
 ```
 
-### Set up additional tools
+## Set up additional tools
 
 Download all of the latest versions of these tools, extract them, and place
 them somewhere on your path (`$N64_TOOLCHAIN/bin` for example):
@@ -33,7 +32,7 @@ them somewhere on your path (`$N64_TOOLCHAIN/bin` for example):
 - https://github.com/trhodeos/spicy/releases
 - https://github.com/trhodeos/makemask/releases
 
-### Apply patches to n64sdk
+## Apply patches to n64sdk
 
 The first file you'll need to modify is `$N64_SDK/ultra/usr/include/make/PRdefs`.
 
@@ -58,3 +57,8 @@ export ROOT=$N64_SDK # defined above
 export GCCDIR=$ROOT/GCC
 export PATH=$N64_TOOLCHAIN/bin:$PATH
 ```
+
+## Feedback
+
+Note that both `spicy` and `makemask` are *far* from polished. Please open issues
+on the appropriate tool and I'll try to investigate as soon as possible.
