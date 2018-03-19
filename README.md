@@ -39,7 +39,7 @@ The first file you'll need to modify is `$N64_SDK/ultra/usr/include/make/PRdefs`
 Make the following modifications:
 
 - Change `CC = gcc` to `CC = mips64-elf-gcc`
-- Change `LD = ld` to `LD = mips64-elf-gcc`
+- Change `LD = ld` to `LD = mips64-elf-ld`
 - Change `MAKEROM = mild` to `MAKEROM = spicy`
 - Change `GCCFLAG` to `GCCFLAG = -c -I$(INC) -D_MIPS_SZLONG=32 -D_MIPS_SZINT=32 -D_LANGUAGE_C -D_ULTRA64 -D__EXTENSIONS__ -mabi=32 -march=vr4300 -mtune=vr4300`
 
