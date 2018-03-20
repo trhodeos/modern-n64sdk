@@ -62,3 +62,11 @@ export PATH=$N64_TOOLCHAIN/bin:$PATH
 
 Note that both `spicy` and `makemask` are *far* from polished. Please open issues
 on the appropriate tool and I'll try to investigate as soon as possible.
+
+## Useful commands
+
+### Disassembling code:
+
+```bash
+mips64-elf-objdump -b binary -m mips:4300 --start-address=0x40 --stop-address=0xB70 -D -EB letters.n64
+```
