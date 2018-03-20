@@ -51,11 +51,14 @@ For any demo you'd like to build, modify the `Makefile` such that:
 ## Export the appropriate variables
 
 Note that these will need to be set for every terminal you use to build.
+`<N64_SDK>` below should be substituted with the path where you extracted the
+sdk. `<N64_TOOLCHAIN>` should be substituted with the path where you built the
+toolchain.
 
 ```bash
-export ROOT=$N64_SDK # defined above
+export ROOT=<N64_SDK>
+export PATH=<N64_TOOLCHAIN>/bin:$PATH
 export GCCDIR=$ROOT/GCC
-export PATH=$N64_TOOLCHAIN/bin:$PATH
 ```
 
 ## Feedback
