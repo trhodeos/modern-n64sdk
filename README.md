@@ -43,9 +43,12 @@ Make the following modifications:
 - Change `MAKEROM = mild` to `MAKEROM = spicy`
 - Change `GCCFLAG` to `GCCFLAG = -c -I$(INC) -D_MIPS_SZLONG=32 -D_MIPS_SZINT=32 -D_LANGUAGE_C -D_ULTRA64 -D__EXTENSIONS__ -mabi=32 -march=vr4300 -mtune=vr4300`
 
-For any demo you'd like to build, modify the `Makefile` such that:
+For any demo you'd like to build, make the follow modifications:
 
-- `FINAL = YES` is not commented out
+- `FINAL = YES` is not commented out in the `Makefile`
+- If running on unix (linux or osx):
+  - Download dos2unix.
+  - Run `dos2unix *.{h,c}` in the current directory.
 
 ## Export the appropriate variables
 
