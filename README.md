@@ -46,7 +46,6 @@ Make the following modifications:
 For any demo you'd like to build, modify the `Makefile` such that:
 
 - `FINAL = YES` is not commented out
-- Comment out the `OPTIMIZER` line (spicy doesn't play nicely with optimizer params for now).
 
 ## Export the appropriate variables
 
