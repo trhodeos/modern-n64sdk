@@ -60,7 +60,7 @@ toolchain.
 ```bash
 export ROOT=<N64_SDK>
 export PATH=<N64_TOOLCHAIN>/bin:$PATH
-export GCCDIR=$ROOT/GCC
+export GCCDIR=$ROOT/ultra/GCC
 ```
 
 ## Feedback
